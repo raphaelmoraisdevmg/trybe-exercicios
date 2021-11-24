@@ -1,5 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: rgb(139, 116, 52);
+    font-family:'Lato',sans-serif;
+}
+.header{
+    width:80%px;
+    border: black 10px solid;
+    padding:25px;
+}
+.navbar{
+    position:absolute;
+    float: right;
+    
+    margin: auto;
+    width:100px;
+    top:5%;
+    left:70%;
+    
+}
+.navbar a{
+    
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
 }
 li{
     list-style: square;
@@ -7,5 +34,26 @@ li{
 a{
     text-decoration: none;
     display: block;
+    
+}
+.text-content{
+    padding: 10px;
+}
+.text{
+    font-size: 16px;
+    justify-content:center;
 
+}
+.quadro{ /*Centralizando a foto e definindo configurações de tamanho da div*/
+    width: 400px;
+    margin: auto;
+    padding: 100px;
+}
+.photo{
+    width: 300px;
+    border-radius: 35px;
+}
+.footer{
+    padding: 50px;
+    width: 300px;
 }
