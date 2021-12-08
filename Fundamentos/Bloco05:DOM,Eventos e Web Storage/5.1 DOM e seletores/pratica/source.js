@@ -1,0 +1,10 @@
+const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+const titulo = document.getElementById("page-title")
+titulo.innerHTML="Duro de matar 4.0";
+titulo.style.color="green";
+const subTitle=document.getElementById("subtitle");
+subTitle.innerHTML="Invocação do mal 3";
+subTitle.style.color="orange";
+const subTitle2=document.getElementsByTagName("h4");
+subTitle2[0].color="red";
