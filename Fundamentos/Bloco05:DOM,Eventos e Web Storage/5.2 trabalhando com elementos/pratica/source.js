@@ -28,8 +28,8 @@ function fatherSoon(){
 }
 fatherSoon();
 function textAcess(){
-    const acess=document.querySelector('#elementoOndeVoceEsta').firstElementChild.nextElementSibling
-    console.log(acess)
+    const acess=document.querySelector('#elementoOndeVoceEsta').firstElementChild.nextElementSibling;
+    console.log(acess);
 }
 textAcess();
 function thirdChild(){
@@ -42,3 +42,30 @@ function fatherToLast(){
     console.log(acess);
 }
 fatherToLast();
+
+//parte 2
+/*Crie um irmão para elementoOndeVoceEsta .
+Crie um filho para elementoOndeVoceEsta .
+Crie um filho para primeiroFilhoDoFilho .
+A partir desse filho criado, acesse terceiroFilho .
+*/
+function brother(){
+let corpo=document.body;
+let brother = document.createElement('div'); //criei o elemento no js
+brother.style.width='200px'
+brother.style.height='200px';
+brother.style.backgroundColor='orange';
+brother.innerText='acabei de ser criado e sou irmão do elementoOndeVoceEsta';
+corpo.appendChild(brother);
+}
+brother();
+function son(){
+const acess=document.querySelector('#elementoOndeVoceEsta');
+let son=document.createElement('div');
+son.style.width='155px';
+son.style.height='155px';
+son.style.background='yellow';
+son.innerText='sou um filho de elementoOndeVoceEsta';
+acess.appendChild(son);
+}
+son();
