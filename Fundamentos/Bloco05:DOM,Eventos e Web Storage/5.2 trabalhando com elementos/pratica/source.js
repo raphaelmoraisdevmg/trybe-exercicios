@@ -69,3 +69,13 @@ son.innerText='sou um filho de elementoOndeVoceEsta';
 acess.appendChild(son);
 }
 son();
+function firstChildOfSon(){
+    const firstSon=document.querySelector('#primeiroFilhoDoFilho');
+    let sonOfSon=document.createElement('div');
+    sonOfSon.style.width="100px"
+    sonOfSon.style.height="100px"
+    sonOfSon.style.backgroundColor="grey";
+    sonOfSon.innerText="sou o primeiro filho do filho. ";
+    firstSon.appendChild(sonOfSon);
+}
+firstChildOfSon();
