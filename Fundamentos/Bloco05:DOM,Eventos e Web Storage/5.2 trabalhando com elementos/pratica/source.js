@@ -79,3 +79,15 @@ function firstChildOfSon(){
     firstSon.appendChild(sonOfSon);
 }
 firstChildOfSon();
+//Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+function remove(){
+const pai = document.getElementById('pai');
+for (let index =pai.childNodes.length-1;index >=0;index-=1){
+ const currentChildren=pai.childNodes[index];
+ if(currentChildren!=='elementoOndeVoceEsta'){
+     currentChildren.remove();
+ }
+}
+const segundoEUltimoDoFilho=document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoDoFilho.remove();
+}
