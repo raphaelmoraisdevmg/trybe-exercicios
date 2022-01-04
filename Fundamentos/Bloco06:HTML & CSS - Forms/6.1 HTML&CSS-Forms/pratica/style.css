@@ -1,0 +1,19 @@
+.content-box{
+    border: 1px solid black;
+    width: 10%;
+    margin: auto;
+    margin-top: 15%;
+    padding: 15px;
+    background-color: turquoise;
+}
+input{
+    margin: auto;
+    display: block;
+}
+
+input[type='submit']{
+    margin: auto;
+    background-color: green;
+    color: white;
+    margin-top: 5px;
+}
