@@ -1,0 +1,16 @@
+sessionStorage.setItem('corFundo','black');
+sessionStorage.setItem('corTexto','yellow');
+sessionStorage.setItem('tamanhoFonte','25px');
+sessionStorage.setItem('espacamento','35px');
+sessionStorage.setItem('tipoFonte','verdana');
+let color=sessionStorage.getItem('corFundo');
+document.body.style.backgroundColor=color;
+let fontColor=sessionStorage.getItem('corTexto');
+const texto=document.getElementById('texto');
+texto.style.color=fontColor;
+let espacamentoLinhas = sessionStorage.getItem('espacamento');
+texto.style.lineHeight=espacamentoLinhas;
+let tamanhoFonte=sessionStorage.getItem('tamanhoFonte');
+texto.style.fontSize=tamanhoFonte;
+let tipoFonte=sessionStorage.getItem('tipoFonte');
+texto.style.fontSize=tipoFonte;
