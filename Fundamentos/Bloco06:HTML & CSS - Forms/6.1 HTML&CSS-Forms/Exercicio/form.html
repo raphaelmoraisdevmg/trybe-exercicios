@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form action="" method="get" class="form-info">
+        <section class='form-box'>
+            <h1>Formulário para cadastro:</h1>
+            <h2>Informações pessoais</h2>
+            <fieldset>
+                <label for="user-name">Nome: 
+                    <input type="text" name="" id="user-name">
+                </label>
+                <label for="user-email">E-mail: 
+                    <input type="email" name="" id="user-email">
+                </label>
+                <label for="user-cpf">Cpf: 
+                    <input type="text" name="" id="user-cpf">
+                </label>
+                <label for="user-adress">Endereço: 
+                    <input type="text" name="" id="user-adres">
+                </label>
+                <label for="user-city">Cidade: 
+                    <input type="text" name="" id="user-city">
+                </label>
+                <label for="select-state">Estado :
+                    <select name="" id="select-state">
+                        <option value="mg">Minas Gerais</option>
+                        <option value="sp">São paulo</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="pr">Paraná</option>
+                        <option value="rs">Rio grande do sul</option>
+                    </select>
+                </label>
+                <label for="tipos-moradia">
+                    <input type="radio" name="moradia" id="tipos-moradia"> Casa
+                    <input type="radio" name="moradia" id="tipos-moradia"> Apartamento
+                </label>
+            </fieldset>
+        </section>
+        
+        
+        <section class="form-box">
+            <h2>Curriculo</h2>
+            <fieldset>
+                <label for="reseume-area">Escreva um rápido resumo: 
+                    <textarea name="" id="resume-area" cols="30" rows="10"></textarea>
+                </label>
+                <label for="job">
+                    qual o seu cargo : <input type="text" name="" id="job">
+                </label>
+                <label for="description-area">Escreva um rápido resumo: 
+                    <textarea name="" id="description-area" cols="30" rows="10"></textarea>
+                </label>
+                <label for="start-date">
+                    data de início : <input type="text" name="" id="start-date">
+                </label>
+                <input type="submit" value="Enviar" class="button">
+                <button id='clear-button' class="button clear">Limpar</button>
+            </fieldset>
+        </section>
+        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
