@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <form action="#" method="get" id='resume-form' class="form-info">
+        <section class='form-box'>
+            <h1 class='display-2'>Formulário para cadastro:</h1>
+            <h2 class='display-4'>Informações pessoais</h2>
+            <fieldset >
+                <div class="d-block">
+                    <label for="user-name">Nome: 
+                        <input type="text" name="" class=' d-block form-control input-group mb-3 ' id="user-name">
+                    </label>
+                </div>
+                <div class='d-block'>
+                    <label for="user-email" >E-mail: 
+                        <input type="email" name="" class='form-control' id="user-email">
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="user-cpf">Cpf: 
+                        <input type="text" name=""class='form-control' id="user-cpf">
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="user-adress">Endereço: 
+                        <input type="text" name=""class='form-control' id="user-adress">
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="user-city">Cidade: 
+                        <input type="text" name=""class='form-control' id="user-city">
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="select-state">Estado :
+                        <select name="" id="select-state">
+                            <option value="mg">Minas Gerais</option>
+                            <option value="sp">São paulo</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="pr">Paraná</option>
+                            <option value="rs">Rio grande do sul</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="tipos-moradia">
+                        <input type="radio" name="moradia" id="tipos-moradia" class='form-check-input mt-0'> Casa
+                        <input type="radio" name="moradia" id="tipos-moradia" class='form-check-input mt-0'> Apartamento
+                    </label>
+                </div>
+                </fieldset>
+        </section>
+        <section class="form-box">
+            <h2 class='display-4'>Curriculo</h2>
+            <fieldset>
+                <div class="d-block">
+                    <label for="reseume-area">Escreva um rápido resumo: 
+                        <textarea name=""class='form-control' id="resume-area" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+                <div class="d-block">
+                    <label for="user-job">
+                        qual o seu cargo : <input type="text" name="" id="user-job">
+                    </label>
+                </div>
+               <div class="d-block">
+                <label for="description-area">Escreva a descrição do seu cargo : 
+                    <textarea name=""class='form-control' id="description-area" cols="30" rows="10"></textarea>
+                </label>
+               </div>
+                <div>
+                    <label for="start-date">
+                        data de início : <input type="text" class='form-control'name="" id="start-date">
+                    </label>
+                </div>
+                
+                <input type="submit" value="Enviar" id="submit" class="btn btn-success form-control">
+                <button id='clear-button' class="btn btn-danger clear form-control">Limpar</button>
+            </fieldset>
+        </section>
+        
+    </form>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/just-validate@3.2.2/dist/just-validate.production.min.js">
+     const validate = new window.JustValidate('#resume-form');
+
+validate.addField('#user-name',{
+    rule:'maxLength',
+    value:40,
+});
+validate.addField('#user-email',{
+    rule:'maxLength',
+    value:50,
+});
+validate.addField('#user-cpf',{
+    rule:'maxLength',
+    value:11,
+});
+validate.addField('#user-adress',{
+    rule:'maxLength',
+    value:200,
+});
+validate.addField('#user-city',{
+    rule:'maxLength',
+    value:11,
+});
+ </script>
+ <script src="script.js"></script> 
+</body>
+</html>
+        
+        
