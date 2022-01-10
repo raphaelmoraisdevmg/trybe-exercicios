@@ -1,0 +1,65 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.header-container{
+    background-color: rgb(60,100,180);
+    padding:0px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    min-width: 70%;
+    justify-content:space-around;
+    align-items: center;
+}
+#trybe-logo{
+    width: 60px;
+}
+#title{
+    color: white;
+}
+.links{
+    text-decoration: none;
+    color:white
+}
+.sub-title{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.technology-container{
+    margin:auto;
+    width:60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+}
+.tec-box{
+    width: 200px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: grey solid 3px;
+    border-radius: 35;
+}
+.tech{
+    width: 100px;
+}
+.footer-container{
+margin: 50px;
+background-color: whitesmoke;
+display: flex;
+justify-content: center;
+}
+.network{
+    width: 200px;
+}
+.social{
+    width: 50px;
+}
