@@ -10,3 +10,8 @@ newKey = 'fullName';
 const fullName = `${customer.firstName} ${customer.lastName}`;
 customer[newKey] = fullName;
 console.log(customer);
+function addParametro(objeto,chave,valor){
+    let newKey=chave;
+    let chave=valor
+    objeto[newKey]
+}
