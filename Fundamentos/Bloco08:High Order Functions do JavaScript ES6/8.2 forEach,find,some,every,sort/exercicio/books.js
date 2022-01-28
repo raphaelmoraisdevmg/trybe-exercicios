@@ -94,3 +94,11 @@ const books = [
   return  books.every((element)=> element.author.birthYear >= 1901 && element.author.birthYear <= 2000);
   }
   //console.log(everyOneWasBornOnSecXX());
+  const someBookWasReleasedOnThe80s= () => {
+    return books.some((element)=> element.releaseYear >= 1980 && element.releaseYear <= 1989);
+  }
+  //console.log(someBookWasReleasedOnThe80s());
+  /* const expectedResult =false;
+  const authorUnique=()=>{
+    books.forEach((book) =>book.author.birthYear)
+  } */
