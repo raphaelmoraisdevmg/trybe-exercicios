@@ -1,0 +1,17 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Exercicios do modulo front-end da trybe",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Raphael Almeida de Morais",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

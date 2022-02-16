@@ -1,4 +1,14 @@
 const books = [
+  {
+    id: 10,
+    name: 'A Coisa 2',
+    genre: 'Terror',
+    author: {
+      name: 'Stephen King',
+      birthYear: 1947,
+    },
+    releaseYear: 1986,
+  },
     {
       id: 1,
       name: 'As Crônicas de Gelo e Fogo',
@@ -64,7 +74,7 @@ const books = [
   // Adicione o código do exercício aqui:
 
   const authorBornIn1947 = () =>{
-      return books.find((element) => element.author.birthYear === 1947);
+      return books.find((book) => book.author.birthYear === 1947);
   }
   //console.log(authorBornIn1947());
  
@@ -86,10 +96,16 @@ const books = [
 
   const booksOrderedByReleaseYearDesc =()=>{
    return books.sort((bookA,bookB)=>{
-        bookA.releaseYear - bookB.releaseYear;
+        if(bookA.releaseYear < bookB.releaseYear){
+        return -1 ;
+        }
+        if(bookA.releaseYear > bookB.releaseYear){
+          return 1 ;
+        }
+        return 0;
       })
   }
-  //console.log(booksOrderedByReleaseYearDesc());
+  console.log(booksOrderedByReleaseYearDesc());
   const everyOneWasBornOnSecXX=()=>{
   return  books.every((element)=> element.author.birthYear >= 1901 && element.author.birthYear <= 2000);
   }
